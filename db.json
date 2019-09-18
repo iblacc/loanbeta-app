@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "username": "bash",
+      "email": "bashonbash@gmail.com",
+      "password": "1111",
+      "admin": "true",
+      "id": 2
+    },
+    {
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "username": "iiblacc",
+      "email": "bashonbash@gmail.com",
+      "password": "1111",
+      "admin": "true",
+      "id": 1
+    },
+    {
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "username": "iblacc",
+      "email": "bashonbash@gmail.com",
+      "password": "1111",
+      "admin": "false",
+      "id": 3
+    },
+    {
+      "firstname": "Mukhtar",
+      "lastname": "Ahmad",
+      "username": "mukky",
+      "email": "mukky@gmail.com",
+      "password": "1111",
+      "admin": "true",
+      "id": 4
+    }
+  ],
+  "loans": []
+}
