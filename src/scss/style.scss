@@ -22,14 +22,14 @@ body {
   // background-attachment: fixed;
   min-height: 700px;
 
-  .dark-overlay {
-    background-color: $dark-overlay;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 700px;
-  }
+  // .dark-overlay {
+  //   background-color: $dark-overlay;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   min-height: 700px;
+  // }
 
   .home-inner {
     padding-top: 120px;
@@ -58,4 +58,12 @@ body {
     font-size: 2em;
     letter-spacing: 1px;
   }
+}
+
+#homeLoanTypes {
+  padding: 100px 0;
+}
+
+.hideLoans {
+  display: none;
 }

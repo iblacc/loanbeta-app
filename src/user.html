@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LoanBeta</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LoanBeta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signOut" href="#">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid p-5 mt-5">
+        <h1 class="display-4">Loan Requests</h1>
+        <p class="lead">Hi <span id="userName"></span>,<br>you can make requests without collateral.</p>
+        <button type="button" id="requestPanelButton" class="btn btn-primary btn-lg">New request</button>
+      </div>
+
+    </div>
+
+    <section id="loantypes" class="hideLoans">
+      <div class="container">
+          <div class="card-deck">
+            <div class="card">
+              <img src="image/loans/loan1.jpg" class="card-img-top" alt="Loan image1">
+              <div class="card-body">
+                <h4 class="card-title">MyPrime</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" data-name="MyPrime" class="btn btn-primary">Request loan</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="image/loans/loan2.jpg" class="card-img-top" alt="Loan image1">
+              <div class="card-body">
+                <h4 class="card-title">Powerup Beta</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" data-name="Powerup Beta" class="btn btn-primary">Request loan</button>
+              </div>
+              
+            </div>
+            <div class="card">
+              <img src="image/loans/loan3.jpg" class="card-img-top" alt="Loan image1">
+              <div class="card-body">
+                <h4 class="card-title">GoEazy</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <button type="button" data-name="GoEazy" class="btn btn-primary">Request loan</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="table">
+      <div class="container my-5">
+        <table id="userTable" class="table">
+          <h3 class="text-center">
+              TOTAL REQUESTS
+          </h3>
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Request Type</th>
+              <th scope="col">Status</th>
+              <th scope="col"></th>
+              <!-- <th scope="col">Request</th>
+              <th scope="col">Last</th> -->
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+
+        <hr><br><br>
+      </div>
+    </section>
+    
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/user.js"></script>
+  </body>
+</html>

@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+  // Request page logic
+  $('#requestNavLink').on('click', function(){
+    $.ajax({
+      method: "GET",
+      url: "http://localhost:3000/loggedIn"
+    }).done(function(loggedInUser) {
+        if(loggedInUser.length === 0) {
+          window.location.replace("login.html");
+        } else if(loggedInUser[0].admin === 'true') {
+          window.location.replace("admin.html");
+        }else if(loggedInUser[0].admin === 'false') {
+          window.location.replace("user.html");
+        }
+      });
+  });
+
   // Sign up logic
   $('#signupForm').submit(function(e){
     e.preventDefault();

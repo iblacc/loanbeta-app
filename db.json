@@ -1,4 +1,15 @@
 {
+  "loggedIn": [
+    {
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "username": "bash",
+      "email": "bashonbash@gmail.com",
+      "password": "1111",
+      "admin": "false",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "firstname": "Shuaib",
@@ -48,6 +59,22 @@
     },
     {
       "type": "Powerup Beta",
+      "firstname": "Sunday",
+      "lastname": "Oni",
+      "userId": "1",
+      "status": "approved",
+      "id": 5
+    },
+    {
+      "type": "Powerup Beta",
+      "firstname": "Sunday",
+      "lastname": "Oni",
+      "userId": "1",
+      "status": "approved",
+      "id": 6
+    },
+    {
+      "type": "Powerup Beta",
       "firstname": "Shuaib",
       "lastname": "Bashir",
       "userId": "2",
@@ -61,6 +88,14 @@
       "userId": "3",
       "status": "declined",
       "id": 4
+    },
+    {
+      "type": "MyPrime",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "2",
+      "status": "pending",
+      "id": 7
     }
   ]
 }
