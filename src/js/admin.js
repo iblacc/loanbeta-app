@@ -37,6 +37,17 @@ $(document).ready(function(){
             });
       
             $('#pendingTable tbody').append(template);
+
+            $('#signOut').on('click', function(){
+              $.ajax({
+                method: "DELETE",
+                url: "http://localhost:3000/loggedIn/" + loggedInUser[0].id
+              }).done(function(){
+                window.location.replace("index.html");
+              }).fail(function(){
+                console.log('Logged in user DELETE request failed');
+              })
+            });
       
             $('.approve').on('click', function(){
               let $this = $(this);
@@ -47,6 +58,7 @@ $(document).ready(function(){
               }).done(function(loan){
                 $this.hide();
                 $this.next().hide();
+                location.reload();
               });
             });
       
@@ -55,10 +67,11 @@ $(document).ready(function(){
               $.ajax({
                 method: "PATCH",
                 url: "http://localhost:3000/loans/" + $this.data("id"),
-                data: {status: "decline"}
+                data: {status: "declined"}
               }).done(function(loan){
                 $this.hide();
                 $this.prev().hide();
+                location.reload();
               });
             });
       

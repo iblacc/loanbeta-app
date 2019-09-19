@@ -1,101 +1,82 @@
 {
-  "loggedIn": [
-    {
-      "firstname": "Shuaib",
-      "lastname": "Bashir",
-      "username": "bash",
-      "email": "bashonbash@gmail.com",
-      "password": "1111",
-      "admin": "false",
-      "id": 2
-    }
-  ],
+  "loggedIn": [],
   "users": [
     {
       "firstname": "Shuaib",
       "lastname": "Bashir",
-      "username": "bash",
+      "username": "ummi2570",
       "email": "bashonbash@gmail.com",
-      "password": "1111",
-      "admin": "true",
-      "id": 2
-    },
-    {
-      "firstname": "Shuaib",
-      "lastname": "Bashir",
-      "username": "iiblacc",
-      "email": "bashonbash@gmail.com",
-      "password": "1111",
-      "admin": "true",
+      "password": "qwerty11",
+      "admin": "false",
       "id": 1
     },
     {
-      "firstname": "Shuaib",
-      "lastname": "Bashir",
-      "username": "iblacc",
-      "email": "bashonbash@gmail.com",
-      "password": "1111",
+      "firstname": "Abu",
+      "lastname": "Anas",
+      "username": "anas",
+      "email": "ab@a.com",
+      "password": "      ",
       "admin": "false",
-      "id": 3
+      "id": 2
     },
     {
-      "firstname": "Mukhtar",
-      "lastname": "Ahmad",
-      "username": "mukky",
-      "email": "mukky@gmail.com",
-      "password": "1111",
+      "firstname": "Tobi",
+      "lastname": "Kunle",
+      "username": "tobi",
+      "email": "tobi@tobias.com",
+      "password": "12",
       "admin": "true",
-      "id": 4
+      "id": 3
     }
   ],
   "loans": [
     {
       "type": "MyPrime",
-      "firstname": "Sunday",
-      "lastname": "Oni",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
       "userId": "1",
-      "status": "pending",
+      "status": "approved",
       "id": 1
     },
     {
-      "type": "Powerup Beta",
-      "firstname": "Sunday",
-      "lastname": "Oni",
-      "userId": "1",
-      "status": "approved",
-      "id": 5
-    },
-    {
-      "type": "Powerup Beta",
-      "firstname": "Sunday",
-      "lastname": "Oni",
-      "userId": "1",
-      "status": "approved",
-      "id": 6
-    },
-    {
-      "type": "Powerup Beta",
+      "type": "GoEazy",
       "firstname": "Shuaib",
       "lastname": "Bashir",
+      "userId": "1",
+      "status": "declined",
+      "id": 2
+    },
+    {
+      "type": "Powerup Beta",
+      "firstname": "Abu",
+      "lastname": "Anas",
       "userId": "2",
       "status": "declined",
       "id": 3
     },
     {
       "type": "GoEazy",
+      "firstname": "Abu",
+      "lastname": "Anas",
+      "userId": "2",
+      "status": "approved",
+      "id": 4
+    },
+    {
+      "type": "Powerup Beta",
       "firstname": "Shuaib",
       "lastname": "Bashir",
-      "userId": "3",
+      "userId": "1",
       "status": "declined",
-      "id": 4
+      "id": 5
     },
     {
       "type": "MyPrime",
       "firstname": "Shuaib",
       "lastname": "Bashir",
-      "userId": "2",
+      "userId": "1",
       "status": "pending",
-      "id": 7
+      "id": 6
     }
   ]
 }

@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+  // If logged in, hide 'sign up' and 'log in'
+  $.ajax({
+    method: "GET",
+    url: "http://localhost:3000/loggedIn"
+  }).done(function(loggedInUser) {
+      if(!(loggedInUser.length === 0)) {
+        $('.loginLink').hide();
+        $('.signUpLink').hide();
+      }
+    });
+
   // Request page logic
   $('#requestNavLink').on('click', function(){
     $.ajax({
@@ -80,7 +91,21 @@ $(document).ready(function(){
         $('#loginPassword').val('');
       } else {
         $('#loginError').html("");
-        console.log(user[0].password);
+        $.ajax({
+          method: "POST",
+          url: "http://localhost:3000/loggedIn",
+          data: user[0]
+        })
+          .done(function(user) {
+          });
+        if(user[0].admin === 'true') {
+          
+          console.log('Admin')
+          window.location.replace("admin.html");
+        } else if(user[0].admin === 'false') {
+          window.location.replace("user.html");
+        }
+        // console.log(user[0].password);
       }
     })
     .fail(function(){
