@@ -37,5 +37,30 @@
       "id": 4
     }
   ],
-  "loans": []
+  "loans": [
+    {
+      "type": "MyPrime",
+      "firstname": "Sunday",
+      "lastname": "Oni",
+      "userId": "1",
+      "status": "pending",
+      "id": 1
+    },
+    {
+      "type": "Powerup Beta",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "2",
+      "status": "declined",
+      "id": 3
+    },
+    {
+      "type": "GoEazy",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "3",
+      "status": "declined",
+      "id": 4
+    }
+  ]
 }
