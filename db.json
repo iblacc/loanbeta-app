@@ -1,5 +1,15 @@
 {
-  "loggedIn": [],
+  "loggedIn": [
+    {
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "username": "ummi2570",
+      "email": "bashonbash@gmail.com",
+      "password": "qwerty11",
+      "admin": "false",
+      "id": "1"
+    }
+  ],
   "users": [
     {
       "firstname": "Shuaib",
@@ -75,8 +85,32 @@
       "firstname": "Shuaib",
       "lastname": "Bashir",
       "userId": "1",
-      "status": "pending",
+      "status": "approved",
       "id": 6
+    },
+    {
+      "type": "GoEazy",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "1",
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "type": "GoEazy",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "1",
+      "status": "pending",
+      "id": 8
+    },
+    {
+      "type": "Powerup Beta",
+      "firstname": "Shuaib",
+      "lastname": "Bashir",
+      "userId": "1",
+      "status": "pending",
+      "id": 9
     }
   ]
 }

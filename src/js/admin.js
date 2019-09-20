@@ -7,6 +7,9 @@ $(document).ready(function(){
       if(loggedInUser.length === 0) {
         window.location.replace("login.html");
       } else if(loggedInUser[0].admin === 'true') {
+
+        $('#adminName').html(loggedInUser[0].firstname);
+
         // Pending request logic
         $.ajax({
           method: "GET",

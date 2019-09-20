@@ -3,28 +3,48 @@ body {
   color: #222121; }
 
 .navbar {
-  background: #d4d7dd;
-  border-bottom: #420000 3px solid;
-  opacity: 0.8; }
+  border-bottom: #e67e22 3px solid; }
 
 #home-section {
-  background: url(../image/hero.jpg) no-repeat center top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/hero.jpg);
   background-size: cover;
-  min-height: 700px; }
+  min-height: 700px;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  color: #fff; }
   #home-section .home-inner {
-    padding-top: 120px; }
+    padding-top: 1px; }
   #home-section .fa {
-    color: #420000;
+    color: #e67e22;
     font-size: 30px; }
   #home-section h1 {
-    margin-top: 100px;
+    margin-top: 120px;
     color: #fff;
+    font-size: 8em;
     word-spacing: 4px;
     letter-spacing: 2px;
     font-weight: 100; }
+  #home-section h1:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    /* Must have when using :after pseudo-class */
+    width: 300px;
+    margin: 0 auto;
+    /* Center content */
+    margin-top: 20px; }
   #home-section p {
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 400;
     letter-spacing: 1px; }
+
+.explore {
+  background-color: #bf6516;
+  color: #fff;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 2.5em;
+  font-weight: 300; }
 
 #homeLoanTypes {
   padding: 100px 0; }

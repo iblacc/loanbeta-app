@@ -8,6 +8,7 @@ $(document).ready(function(){
       if(loggedInUser.length === 0) {
         window.location.replace("login.html");
       } else if(loggedInUser[0].admin === 'false'){
+        $('#adminName').html(loggedInUser[0].firstname);
         $.ajax({
           method: "GET",
           url: "http://localhost:3000/users/" + loggedInUser[0].id + "/loans"
